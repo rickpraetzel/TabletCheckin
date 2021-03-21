@@ -218,12 +218,10 @@ Begin mPage StoreCreditCardPage
    Begin ANetProfileManager ANetProfileManager1
       Index           =   -2147483648
       isProcessingLiveRequests=   False
-      Left            =   0.0
       LockedInPosition=   False
       Scope           =   2
       Style           =   "0"
       TabPanelIndex   =   0
-      Top             =   0.0
    End
    Begin WebTimer RequestTimer
       Cursor          =   0
@@ -231,7 +229,6 @@ Begin mPage StoreCreditCardPage
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   0.0
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -244,7 +241,6 @@ Begin mPage StoreCreditCardPage
       Scope           =   2
       Style           =   "0"
       TabOrder        =   -1
-      Top             =   0.0
       VerticalCenter  =   0
       ZIndex          =   1
       _DeclareLineRendered=   False
@@ -262,7 +258,6 @@ Begin mPage StoreCreditCardPage
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   0.0
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -275,7 +270,6 @@ Begin mPage StoreCreditCardPage
       Scope           =   2
       Style           =   "0"
       TabOrder        =   -1
-      Top             =   0.0
       VerticalCenter  =   0
       ZIndex          =   1
       _DeclareLineRendered=   False

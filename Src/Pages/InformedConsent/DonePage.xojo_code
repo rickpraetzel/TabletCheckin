@@ -115,6 +115,7 @@ Begin WebPage DonePage
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
+      Left            =   0.0
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -127,6 +128,7 @@ Begin WebPage DonePage
       Scope           =   2
       Style           =   "0"
       TabOrder        =   -1
+      Top             =   0.0
       VerticalCenter  =   0
       ZIndex          =   1
       _DeclareLineRendered=   False
@@ -155,7 +157,7 @@ End
 	#tag Event
 		Sub Action()
 		  session.reset()
-		  session.ReservationCheck.show()
+		  session.PhoneNumbersearchPage.show()
 		End Sub
 	#tag EndEvent
 #tag EndEvents

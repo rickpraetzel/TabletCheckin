@@ -260,6 +260,29 @@ Inherits WebApplication
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h21
+		Private Sub TablTable(entry as loggable)
+		  if not DebugBuild then 
+		    dim cmd as string =_
+		    "curl -s --user 'api:" + preferences.Lookup("emailKey", "")+ "' https://api.mailgun.net/v3/accounts.zionadventures.com/messages " +_
+		    "-F from='Error Report <no-reply@accounts.zionadventures.com>' " +_
+		    "-F to=technology@zionadventures.com " +_
+		    "-F subject='TabletCheckin Error' " +_
+		    "-F template='tabletcheckin_error' " +_
+		    "-F h:X-Mailgun-Variables='" + entry.toJSON() + "'"
+		    
+		    dim ss as new Shell()
+		    ss.Mode = 0
+		    ss.Execute(cmd)
+		    ss.Close()
+		    
+		  else
+		    break
+		    
+		  end if
+		End Sub
+	#tag EndMethod
+
 
 	#tag Property, Flags = &h0
 		calendarData As CalendarToolkit.Controller

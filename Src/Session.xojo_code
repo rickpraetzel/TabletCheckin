@@ -47,13 +47,14 @@ Inherits WebSession
 		    
 		    if checkIsLocalConntection then
 		      self.logEntry("Connection found to be local, bypassing login page")
-		      ReservationCheck.show()
+		      'ReservationCheck.show()
+		      session.PhoneNumberSearch.show(new bookingtoolkit.customer(), new bookingtoolkit.reservation())
 		      self.Timeout = 0
 		      self.isLocal = true
 		      
 		    else
 		      self.logEntry("Loading Phone Number page")
-		      'PhoneNumberSearchPage.Show
+		      session.PhoneNumberSearch.show(new bookingtoolkit.customer(), new bookingtoolkit.reservation())
 		      
 		    end if
 		    
