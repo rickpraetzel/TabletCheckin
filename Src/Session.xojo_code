@@ -52,8 +52,8 @@ Inherits WebSession
 		      self.isLocal = true
 		      
 		    else
-		      self.logEntry("Loading login page")
-		      LoginPage.Show()
+		      self.logEntry("Loading Phone Number page")
+		      'PhoneNumberSearchPage.Show
 		      
 		    end if
 		    
