@@ -1,0 +1,43 @@
+#tag MultiImage
+Image FullLogo
+	#tag ImageRepresentation
+		SaveInfo = APHRcwECAQAAAAHkAAAAAAHkAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fTG9nby1aQVppb25BZHZlbnR1I0ZGRkZGRkZGLnBuZwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAP////8AAAogY3UAAAAAAAAAAAAAAAAACVJlc291cmNlcwAAAgBdLzpVc2VyczplamFtOkRvY3VtZW50czpQcm9qZWN0czpPbmxpbmVDaGVja0luOlJlc291cmNlczpMb2dvLVpBWmlvbkFkdmVudHVyZXMtMmxpbmUtY29sb3IucG5nAAAOAEwAJQBMAG8AZwBvAC0AWgBBAFoAaQBvAG4AQQBkAHYAZQBuAHQAdQByAGUAcwAtADIAbABpAG4AZQAtAGMAbwBsAG8AcgAuAHAAbgBnAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAW1VzZXJzL2VqYW0vRG9jdW1lbnRzL1Byb2plY3RzL09ubGluZUNoZWNrSW4vUmVzb3VyY2VzL0xvZ28tWkFaaW9uQWR2ZW50dXJlcy0ybGluZS1jb2xvci5wbmcAABMAAS8AABUAAgAL//8AAAAAAAAAAA==
+		FullPath = /Users/ejam/Documents/Projects/OnlineCheckIn/Resources/Logo-ZAZionAdventures-2line-color.png
+		PartialPath = ..\Resources\Logo-ZAZionAdventures-2line-color.png
+		#tag ImageSpecification
+			Comment = 
+			Device = 31
+			HSize = 384.00
+			Orientation = Any
+			Platform = 15
+			PPI = 72
+			VSize = 80.00
+		#tag EndImageSpecification
+	#tag EndImageRepresentation
+	#tag ImageRepresentation
+		SaveInfo = APHRcwECAQAAAAHkAAAAAAHkAAIAAAxNYWNpbnRvc2ggSEQAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8fTG9nby1aQVppb25BZHZlbnR1I0ZGRkZGRkZGLnBuZwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAP////8AAAogY3UAAAAAAAAAAAAAAAAACVJlc291cmNlcwAAAgBdLzpVc2VyczplamFtOkRvY3VtZW50czpQcm9qZWN0czpPbmxpbmVDaGVja0luOlJlc291cmNlczpMb2dvLVpBWmlvbkFkdmVudHVyZXMtMmxpbmUtY29sb3IucG5nAAAOAEwAJQBMAG8AZwBvAC0AWgBBAFoAaQBvAG4AQQBkAHYAZQBuAHQAdQByAGUAcwAtADIAbABpAG4AZQAtAGMAbwBsAG8AcgAuAHAAbgBnAA8AGgAMAE0AYQBjAGkAbgB0AG8AcwBoACAASABEABIAW1VzZXJzL2VqYW0vRG9jdW1lbnRzL1Byb2plY3RzL09ubGluZUNoZWNrSW4vUmVzb3VyY2VzL0xvZ28tWkFaaW9uQWR2ZW50dXJlcy0ybGluZS1jb2xvci5wbmcAABMAAS8AABUAAgAL//8AAAAAAAAAAA==
+		FullPath = /Users/ejam/Documents/Projects/OnlineCheckIn/Resources/Logo-ZAZionAdventures-2line-color.png
+		PartialPath = ..\Resources\Logo-ZAZionAdventures-2line-color.png
+		#tag ImageSpecification
+			Comment = 
+			Device = 31
+			HSize = 384.00
+			Orientation = Any
+			Platform = 15
+			PPI = 144
+			VSize = 80.00
+		#tag EndImageSpecification
+	#tag EndImageRepresentation
+	#tag ImageRepresentation
+		#tag ImageSpecification
+			Comment = 
+			Device = 31
+			HSize = 384.00
+			Orientation = Any
+			Platform = 15
+			PPI = 216
+			VSize = 80.00
+		#tag EndImageSpecification
+	#tag EndImageRepresentation
+End Image
+#tag EndMultiImage
