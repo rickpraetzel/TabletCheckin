@@ -1,5 +1,5 @@
 #tag WebPage
-Begin mPage RentalDetailsPage
+Begin mPage LDLPage
    Compatibility   =   ""
    Cursor          =   0
    Enabled         =   True
@@ -93,8 +93,8 @@ Begin mPage RentalDetailsPage
       Scope           =   0
       Style           =   "2058735615"
       TabOrder        =   0
-      Text            =   "Rental Details"
-      TextAlign       =   0
+      Text            =   "- IMPORTANT -"
+      TextAlign       =   2
       Top             =   132
       VerticalCenter  =   0
       Visible         =   True
@@ -109,88 +109,15 @@ Begin mPage RentalDetailsPage
       _OpenEventFired =   False
       _VerticalPercent=   0.0
    End
-   Begin RentalDetailsControl RentalDetailsControl1
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   251
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   True
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   2
-      ScrollbarsVisible=   0
-      Style           =   "0"
-      TabOrder        =   1
-      Top             =   191
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   304
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _ShownEventFired=   False
-      _VerticalPercent=   0.0
-   End
-   Begin DateDropDown DateDropDown1
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   230
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   60
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   False
-      LockLeft        =   True
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      MinHeight       =   230
-      MinWidth        =   245
-      Resizable       =   False
-      Scope           =   2
-      Style           =   "0"
-      TabOrder        =   -1
-      Title           =   "Select Date"
-      Top             =   60
-      Type            =   3
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   245
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _ShownEventFired=   False
-      _VerticalPercent=   0.0
-   End
 End
 #tag EndWebPage
 
 #tag WindowCode
 	#tag Method, Flags = &h21
 		Private Sub Advance(endDate as Xojo.Core.Date)
-		  mReservation.groupSize = RentalDetailsControl1.getGroupSize()
-		  mReservation.endDate = endDate
+		  
 		  Session.addPageToPath(Self)
-		  session.LDL.show(mCustomer, mReservation)
+		  session.InformedConsent.show(mCustomer, mReservation)
 		End Sub
 	#tag EndMethod
 
@@ -207,25 +134,6 @@ End
 	#tag Event
 		Sub Open()
 		  me.Picture = app.Logo
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events RentalDetailsControl1
-	#tag Event
-		Sub DateSelected(dd as Xojo.Core.Date)
-		  Advance(dd)
-		End Sub
-	#tag EndEvent
-	#tag Event
-		Sub NeedsDate()
-		  DateDropDown1.show(xojo.core.date.Now())
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events DateDropDown1
-	#tag Event
-		Sub dateSelected(theDate as Xojo.Core.Date)
-		  Advance(theDate)
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -82,18 +82,18 @@ Begin WebPage DonePage
       HorizontalCenter=   0
       Index           =   -2147483648
       Left            =   5
-      LockBottom      =   False
+      LockBottom      =   True
       LockedInPosition=   False
-      LockHorizontal  =   True
-      LockLeft        =   False
-      LockRight       =   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   True
       LockTop         =   True
       LockVertical    =   False
       Multiline       =   True
       Scope           =   2
       Style           =   "2058735615"
       TabOrder        =   0
-      Text            =   "Thank you\n\nPlease see an outfitter"
+      Text            =   "Completed, Thank you\n\nPlease wait for an outfitter..."
       TextAlign       =   2
       Top             =   132
       VerticalCenter  =   0
@@ -157,7 +157,7 @@ End
 	#tag Event
 		Sub Action()
 		  session.reset()
-		  session.PhoneNumbersearchPage.show()
+		  'session.PhoneNumbersearchPage.show()
 		End Sub
 	#tag EndEvent
 #tag EndEvents

@@ -166,6 +166,7 @@ Inherits WebSession
 		  NewCustomer = new NewCustomerPage()
 		  PhoneNumberSearch = new PhoneNumberSearchPage()
 		  RentalDetails = new RentalDetailsPage()
+		  LDL = new LDLPage()
 		  ReservationCheck = new ReservationCheckPage()
 		  ReturnCustomer = new ReturnCustomerPage()
 		  SelectPerson = new SelectPersonPage()
@@ -283,6 +284,10 @@ Inherits WebSession
 
 	#tag Property, Flags = &h0
 		isLocal As boolean
+	#tag EndProperty
+
+	#tag Property, Flags = &h0
+		LDL As LDLPage
 	#tag EndProperty
 
 	#tag Property, Flags = &h21

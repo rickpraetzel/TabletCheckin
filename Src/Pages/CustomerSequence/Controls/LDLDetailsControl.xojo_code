@@ -1,34 +1,29 @@
 #tag WebPage
-Begin mPage RentalDetailsPage
+Begin WebContainer LDLDetailsControl
    Compatibility   =   ""
    Cursor          =   0
    Enabled         =   True
-   Height          =   454
+   Height          =   527
    HelpTag         =   ""
    HorizontalCenter=   0
-   ImplicitInstance=   False
    Index           =   -2147483648
-   IsImplicitInstance=   False
    Left            =   0
    LockBottom      =   False
    LockHorizontal  =   False
-   LockLeft        =   False
+   LockLeft        =   True
    LockRight       =   False
-   LockTop         =   False
+   LockTop         =   True
    LockVertical    =   False
-   MinHeight       =   454
-   MinWidth        =   304
+   ScrollbarsVisible=   0
    Style           =   "1457729535"
    TabOrder        =   0
-   Title           =   "Check In"
    Top             =   0
    VerticalCenter  =   0
    Visible         =   True
-   Width           =   304
+   Width           =   388
    ZIndex          =   1
    _DeclareLineRendered=   False
    _HorizontalPercent=   0.0
-   _ImplicitInstance=   False
    _IsEmbedded     =   False
    _Locked         =   False
    _NeedsRendering =   True
@@ -36,33 +31,32 @@ Begin mPage RentalDetailsPage
    _OpenEventFired =   False
    _ShownEventFired=   False
    _VerticalPercent=   0.0
-   Begin WebImageView ImageView1
-      AlignHorizontal =   0
-      AlignVertical   =   0
-      Cursor          =   0
+   Begin WebLabel Label2
+      Cursor          =   1
       Enabled         =   True
-      Height          =   100
+      HasFocusRing    =   True
+      Height          =   101
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   102
+      Left            =   49
       LockBottom      =   False
       LockedInPosition=   False
-      LockHorizontal  =   True
-      LockLeft        =   False
+      LockHorizontal  =   False
+      LockLeft        =   True
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      Picture         =   0
-      ProtectImage    =   True
+      Multiline       =   True
       Scope           =   2
-      Style           =   "0"
-      TabOrder        =   -1
-      Top             =   20
-      URL             =   "https://assets.zionadventures.com/zacLogoRound.png"
+      Style           =   "363270143"
+      TabOrder        =   0
+      Text            =   "Limited Financial Exposure For Damage to Rental Equipment\n"
+      TextAlign       =   2
+      Top             =   0
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   100
+      Width           =   290
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -77,80 +71,11 @@ Begin mPage RentalDetailsPage
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
-      Height          =   50
+      Height          =   330
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   5
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   True
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Multiline       =   True
-      Scope           =   0
-      Style           =   "2058735615"
-      TabOrder        =   0
-      Text            =   "Rental Details"
-      TextAlign       =   0
-      Top             =   132
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   294
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _VerticalPercent=   0.0
-   End
-   Begin RentalDetailsControl RentalDetailsControl1
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   251
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   0
-      LockBottom      =   False
-      LockedInPosition=   False
-      LockHorizontal  =   True
-      LockLeft        =   False
-      LockRight       =   False
-      LockTop         =   True
-      LockVertical    =   False
-      Scope           =   2
-      ScrollbarsVisible=   0
-      Style           =   "0"
-      TabOrder        =   1
-      Top             =   191
-      VerticalCenter  =   0
-      Visible         =   True
-      Width           =   304
-      ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
-      _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _ShownEventFired=   False
-      _VerticalPercent=   0.0
-   End
-   Begin DateDropDown DateDropDown1
-      Cursor          =   0
-      Enabled         =   True
-      Height          =   230
-      HelpTag         =   ""
-      HorizontalCenter=   0
-      Index           =   -2147483648
-      Left            =   60
+      Left            =   9
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -158,77 +83,75 @@ Begin mPage RentalDetailsPage
       LockRight       =   False
       LockTop         =   True
       LockVertical    =   False
-      MinHeight       =   230
-      MinWidth        =   245
-      Resizable       =   False
+      Multiline       =   True
       Scope           =   2
       Style           =   "0"
-      TabOrder        =   -1
-      Title           =   "Select Date"
-      Top             =   60
-      Type            =   3
+      TabOrder        =   1
+      Text            =   "Zion Adventure Company offers the opportunity for rental customers to limit their financial liability for damage to rental equipment during the normal use of that equipment within the context of the rental agreement.  Damage incurred through neglect or intention is not covered.\r\rAs Zion Adventure Company provides higher quality equipment – and in many cases the highest quality equipment available - and whereas most of this equipment is technical in nature, equipment repairs can be quite expensive.\r\rLimited Damage Liability for Bicycles effectively limits your cost of damage to $25.00.  Cost for this service is $2.00 per bike and must be carried on all bikes in your party.\r\rLimited Damage Liability for Drypants and Drysuits effectively limits your cost of damage to the cost of the LDL.  Cost for this service is $1.00 per suit/pant and must be carried on all members of your party.\r"
+      TextAlign       =   0
+      Top             =   103
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   245
+      Width           =   379
       ZIndex          =   1
-      _DeclareLineRendered=   False
-      _HorizontalPercent=   0.0
-      _IsEmbedded     =   False
-      _Locked         =   False
       _NeedsRendering =   True
-      _OfficialControl=   False
-      _OpenEventFired =   False
-      _ShownEventFired=   False
-      _VerticalPercent=   0.0
+   End
+   Begin WebRadioGroup RadioGroup1
+      ColumnCount     =   2
+      Cursor          =   1
+      Enabled         =   True
+      Height          =   44
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      InitialValue    =   "`ACCEPT`,`True`,``,`True`,`True`	`DECLINE`,`True`,``,`False`,`True`"
+      Left            =   88
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      RowCount        =   1
+      Scope           =   2
+      Style           =   "0"
+      TabOrder        =   2
+      Top             =   445
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   211
+      ZIndex          =   1
+      _NeedsRendering =   True
    End
 End
 #tag EndWebPage
 
 #tag WindowCode
-	#tag Method, Flags = &h21
-		Private Sub Advance(endDate as Xojo.Core.Date)
-		  mReservation.groupSize = RentalDetailsControl1.getGroupSize()
-		  mReservation.endDate = endDate
-		  Session.addPageToPath(Self)
-		  session.LDL.show(mCustomer, mReservation)
-		End Sub
-	#tag EndMethod
-
 	#tag Method, Flags = &h0
 		Sub clear()
 		  
 		End Sub
 	#tag EndMethod
 
+	#tag Method, Flags = &h0
+		Function getGroupSize() As integer
+		  
+		End Function
+	#tag EndMethod
+
+
+	#tag Hook, Flags = &h0
+		Event DateSelected(dd as Xojo.Core.Date)
+	#tag EndHook
+
+	#tag Hook, Flags = &h0
+		Event NeedsDate()
+	#tag EndHook
+
 
 #tag EndWindowCode
 
-#tag Events ImageView1
-	#tag Event
-		Sub Open()
-		  me.Picture = app.Logo
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events RentalDetailsControl1
-	#tag Event
-		Sub DateSelected(dd as Xojo.Core.Date)
-		  Advance(dd)
-		End Sub
-	#tag EndEvent
-	#tag Event
-		Sub NeedsDate()
-		  DateDropDown1.show(xojo.core.date.Now())
-		End Sub
-	#tag EndEvent
-#tag EndEvents
-#tag Events DateDropDown1
-	#tag Event
-		Sub dateSelected(theDate as Xojo.Core.Date)
-		  Advance(theDate)
-		End Sub
-	#tag EndEvent
-#tag EndEvents
 #tag ViewBehavior
 	#tag ViewProperty
 		Name="Cursor"
@@ -264,7 +187,7 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Enabled"
-		Visible=false
+		Visible=true
 		Group="Behavior"
 		InitialValue="True"
 		Type="Boolean"
@@ -274,7 +197,7 @@ End
 		Name="Height"
 		Visible=true
 		Group="Position"
-		InitialValue="400"
+		InitialValue="300"
 		Type="Integer"
 		EditorType=""
 	#tag EndViewProperty
@@ -296,23 +219,15 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Index"
-		Visible=false
+		Visible=true
 		Group="ID"
-		InitialValue="-2147483648 "
+		InitialValue="-2147483648"
 		Type="Integer"
 		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
-		Name="IsImplicitInstance"
-		Visible=false
-		Group="Behavior"
-		InitialValue=""
-		Type="Boolean"
-		EditorType=""
-	#tag EndViewProperty
-	#tag ViewProperty
 		Name="Left"
-		Visible=false
+		Visible=true
 		Group="Position"
 		InitialValue="0"
 		Type="Integer"
@@ -320,7 +235,7 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="LockBottom"
-		Visible=false
+		Visible=true
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
@@ -328,23 +243,23 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="LockHorizontal"
-		Visible=false
-		Group="Behavior"
-		InitialValue=""
-		Type="Boolean"
-		EditorType=""
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="LockLeft"
-		Visible=false
+		Visible=true
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
 		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
+		Name="LockLeft"
+		Visible=true
+		Group="Behavior"
+		InitialValue="True"
+		Type="Boolean"
+		EditorType=""
+	#tag EndViewProperty
+	#tag ViewProperty
 		Name="LockRight"
-		Visible=false
+		Visible=true
 		Group="Behavior"
 		InitialValue="False"
 		Type="Boolean"
@@ -352,34 +267,18 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="LockTop"
-		Visible=false
+		Visible=true
 		Group="Behavior"
-		InitialValue="False"
+		InitialValue="True"
 		Type="Boolean"
 		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="LockVertical"
-		Visible=false
+		Visible=true
 		Group="Behavior"
-		InitialValue=""
+		InitialValue="False"
 		Type="Boolean"
-		EditorType=""
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="MinHeight"
-		Visible=true
-		Group="Behavior"
-		InitialValue="400"
-		Type="Integer"
-		EditorType=""
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="MinWidth"
-		Visible=true
-		Group="Behavior"
-		InitialValue="600"
-		Type="Integer"
 		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
@@ -391,6 +290,21 @@ End
 		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
+		Name="ScrollbarsVisible"
+		Visible=true
+		Group="Behavior"
+		InitialValue="0"
+		Type="Integer"
+		EditorType="Enum"
+		#tag EnumValues
+			"0 - Automatic"
+			"1 - Always"
+			"2 - Never"
+			"3 - Vertical"
+			"4 - Horizontal"
+		#tag EndEnumValues
+	#tag EndViewProperty
+	#tag ViewProperty
 		Name="Super"
 		Visible=true
 		Group="ID"
@@ -400,23 +314,15 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="TabOrder"
-		Visible=false
+		Visible=true
 		Group="Behavior"
-		InitialValue=""
+		InitialValue="0"
 		Type="Integer"
 		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
-		Name="Title"
-		Visible=true
-		Group="Behavior"
-		InitialValue="Untitled"
-		Type="String"
-		EditorType="MultiLineEditor"
-	#tag EndViewProperty
-	#tag ViewProperty
 		Name="Top"
-		Visible=false
+		Visible=true
 		Group="Position"
 		InitialValue="0"
 		Type="Integer"
@@ -432,7 +338,7 @@ End
 	#tag EndViewProperty
 	#tag ViewProperty
 		Name="Visible"
-		Visible=false
+		Visible=true
 		Group="Behavior"
 		InitialValue="True"
 		Type="Boolean"
@@ -442,7 +348,7 @@ End
 		Name="Width"
 		Visible=true
 		Group="Position"
-		InitialValue="600"
+		InitialValue="300"
 		Type="Integer"
 		EditorType=""
 	#tag EndViewProperty
@@ -468,14 +374,6 @@ End
 		Group="Behavior"
 		InitialValue=""
 		Type="Double"
-		EditorType=""
-	#tag EndViewProperty
-	#tag ViewProperty
-		Name="_ImplicitInstance"
-		Visible=false
-		Group="Behavior"
-		InitialValue="False"
-		Type="Boolean"
 		EditorType=""
 	#tag EndViewProperty
 	#tag ViewProperty
