@@ -473,6 +473,7 @@ Protected Class Controller
 		  dr.Column("informedtimezone") = convertBooleanToText(resDetails.isInformedTimeZone)
 		  dr.Column("informedpickuplocation") = convertBooleanToText(resDetails.isInformedPickupLocation)
 		  dr.column("creationMethod") = BookingToolkit.mapCreationMethod(resDetails.creationMethod)
+		  dr.Column("addLDL") = convertBooleanToText(resDetails.addLDL)
 		  
 		  mSqlServer.InsertRecord("Reservations", dr)
 		  if not mSqlServer.error then
@@ -2165,7 +2166,9 @@ Protected Class Controller
 			Name="Name"
 			Visible=true
 			Group="ID"
+			InitialValue=""
 			Type="String"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Index"
@@ -2173,12 +2176,15 @@ Protected Class Controller
 			Group="ID"
 			InitialValue="-2147483648"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Super"
 			Visible=true
 			Group="ID"
+			InitialValue=""
 			Type="String"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Left"
@@ -2186,6 +2192,7 @@ Protected Class Controller
 			Group="Position"
 			InitialValue="0"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 		#tag ViewProperty
 			Name="Top"
@@ -2193,6 +2200,7 @@ Protected Class Controller
 			Group="Position"
 			InitialValue="0"
 			Type="Integer"
+			EditorType=""
 		#tag EndViewProperty
 	#tag EndViewBehavior
 End Class

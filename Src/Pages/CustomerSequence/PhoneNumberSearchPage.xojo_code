@@ -228,6 +228,13 @@ End
 #tag EndWebPage
 
 #tag WindowCode
+	#tag Event
+		Sub Shown()
+		  PhoneField.SetFocus
+		End Sub
+	#tag EndEvent
+
+
 	#tag Method, Flags = &h0
 		Sub show(cust as bookingtoolkit.customer, res as bookingtoolkit.reservation)
 		  PhoneField.Text = ""

@@ -3,7 +3,7 @@ Begin mPage LDLPage
    Compatibility   =   ""
    Cursor          =   0
    Enabled         =   True
-   Height          =   454
+   Height          =   734
    HelpTag         =   ""
    HorizontalCenter=   0
    ImplicitInstance=   False
@@ -24,7 +24,7 @@ Begin mPage LDLPage
    Top             =   0
    VerticalCenter  =   0
    Visible         =   True
-   Width           =   304
+   Width           =   534
    ZIndex          =   1
    _DeclareLineRendered=   False
    _HorizontalPercent=   0.0
@@ -45,7 +45,7 @@ Begin mPage LDLPage
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   102
+      Left            =   217
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   True
@@ -81,7 +81,7 @@ Begin mPage LDLPage
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   5
+      Left            =   120
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   True
@@ -95,7 +95,7 @@ Begin mPage LDLPage
       TabOrder        =   0
       Text            =   "- IMPORTANT -"
       TextAlign       =   2
-      Top             =   132
+      Top             =   123
       VerticalCenter  =   0
       Visible         =   True
       Width           =   294
@@ -107,6 +107,74 @@ Begin mPage LDLPage
       _NeedsRendering =   True
       _OfficialControl=   False
       _OpenEventFired =   False
+      _VerticalPercent=   0.0
+   End
+   Begin LDLDetailsControl LDLDetailsControl1
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   446
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   20
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   2
+      ScrollbarsVisible=   0
+      Style           =   "0"
+      TabOrder        =   1
+      Top             =   165
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   494
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _ShownEventFired=   False
+      _VerticalPercent=   0.0
+   End
+   Begin MovementControl MovementControl1
+      Cursor          =   0
+      Enabled         =   True
+      Height          =   53
+      HelpTag         =   ""
+      HorizontalCenter=   0
+      Index           =   -2147483648
+      Left            =   110
+      LockBottom      =   False
+      LockedInPosition=   False
+      LockHorizontal  =   False
+      LockLeft        =   True
+      LockRight       =   False
+      LockTop         =   True
+      LockVertical    =   False
+      Scope           =   2
+      ScrollbarsVisible=   0
+      Style           =   "0"
+      TabOrder        =   2
+      Top             =   631
+      VerticalCenter  =   0
+      Visible         =   True
+      Width           =   304
+      ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
+      _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _ShownEventFired=   False
       _VerticalPercent=   0.0
    End
 End
@@ -134,6 +202,33 @@ End
 	#tag Event
 		Sub Open()
 		  me.Picture = app.Logo
+		End Sub
+	#tag EndEvent
+#tag EndEvents
+#tag Events MovementControl1
+	#tag Event
+		Sub PrimaryButtonPressed()
+		  var p as pair
+		  p = LDLDetailsControl1.radiogroup1.selectedcell 
+		  if p.right = 0 then 'raiobutton for accept
+		    mReservation.addldl = true
+		  else
+		    mReservation.addldl = false  'raiobutton for decline
+		  end if
+		  session.addPageToPath(self)
+		  session.InformedConsent.Show(mCustomer, mReservation)
+		  
+		  
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub SecondaryButtonPressed()
+		  session.goBack(mCustomer, mReservation)
+		End Sub
+	#tag EndEvent
+	#tag Event
+		Sub Shown()
+		  MovementControl1.ActivatePrimary
 		End Sub
 	#tag EndEvent
 #tag EndEvents

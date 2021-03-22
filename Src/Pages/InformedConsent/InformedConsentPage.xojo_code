@@ -363,7 +363,7 @@ End
 		    self.logEntry("success")
 		    
 		    if not mReservation.isInDatabase then 
-		      mReservation.creatorName = "ESI"
+		      mReservation.creatorName = "TCI"
 		      mReservation.creatorSerial = "0"
 		      self.logEntry("Creating reservation...")
 		      mReservation.serial = session.ERC_Controller.createNewReservation(mReservation)

@@ -3,7 +3,7 @@ Begin WebContainer LDLDetailsControl
    Compatibility   =   ""
    Cursor          =   0
    Enabled         =   True
-   Height          =   527
+   Height          =   453
    HelpTag         =   ""
    HorizontalCenter=   0
    Index           =   -2147483648
@@ -20,7 +20,7 @@ Begin WebContainer LDLDetailsControl
    Top             =   0
    VerticalCenter  =   0
    Visible         =   True
-   Width           =   388
+   Width           =   494
    ZIndex          =   1
    _DeclareLineRendered=   False
    _HorizontalPercent=   0.0
@@ -39,7 +39,7 @@ Begin WebContainer LDLDetailsControl
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
-      Left            =   49
+      Left            =   78
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -49,14 +49,14 @@ Begin WebContainer LDLDetailsControl
       LockVertical    =   False
       Multiline       =   True
       Scope           =   2
-      Style           =   "363270143"
+      Style           =   "764332031"
       TabOrder        =   0
       Text            =   "Limited Financial Exposure For Damage to Rental Equipment\n"
       TextAlign       =   2
-      Top             =   0
+      Top             =   20
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   290
+      Width           =   337
       ZIndex          =   1
       _DeclareLineRendered=   False
       _HorizontalPercent=   0.0
@@ -71,7 +71,7 @@ Begin WebContainer LDLDetailsControl
       Cursor          =   1
       Enabled         =   True
       HasFocusRing    =   True
-      Height          =   330
+      Height          =   302
       HelpTag         =   ""
       HorizontalCenter=   0
       Index           =   -2147483648
@@ -89,12 +89,19 @@ Begin WebContainer LDLDetailsControl
       TabOrder        =   1
       Text            =   "Zion Adventure Company offers the opportunity for rental customers to limit their financial liability for damage to rental equipment during the normal use of that equipment within the context of the rental agreement.  Damage incurred through neglect or intention is not covered.\r\rAs Zion Adventure Company provides higher quality equipment – and in many cases the highest quality equipment available - and whereas most of this equipment is technical in nature, equipment repairs can be quite expensive.\r\rLimited Damage Liability for Bicycles effectively limits your cost of damage to $25.00.  Cost for this service is $2.00 per bike and must be carried on all bikes in your party.\r\rLimited Damage Liability for Drypants and Drysuits effectively limits your cost of damage to the cost of the LDL.  Cost for this service is $1.00 per suit/pant and must be carried on all members of your party.\r"
       TextAlign       =   0
-      Top             =   103
+      Top             =   90
       VerticalCenter  =   0
       Visible         =   True
-      Width           =   379
+      Width           =   465
       ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
    Begin WebRadioGroup RadioGroup1
       ColumnCount     =   2
@@ -105,7 +112,7 @@ Begin WebContainer LDLDetailsControl
       HorizontalCenter=   0
       Index           =   -2147483648
       InitialValue    =   "`ACCEPT`,`True`,``,`True`,`True`	`DECLINE`,`True`,``,`False`,`True`"
-      Left            =   88
+      Left            =   156
       LockBottom      =   False
       LockedInPosition=   False
       LockHorizontal  =   False
@@ -117,12 +124,19 @@ Begin WebContainer LDLDetailsControl
       Scope           =   2
       Style           =   "0"
       TabOrder        =   2
-      Top             =   445
+      Top             =   397
       VerticalCenter  =   0
       Visible         =   True
       Width           =   211
       ZIndex          =   1
+      _DeclareLineRendered=   False
+      _HorizontalPercent=   0.0
+      _IsEmbedded     =   False
+      _Locked         =   False
       _NeedsRendering =   True
+      _OfficialControl=   False
+      _OpenEventFired =   False
+      _VerticalPercent=   0.0
    End
 End
 #tag EndWebPage
