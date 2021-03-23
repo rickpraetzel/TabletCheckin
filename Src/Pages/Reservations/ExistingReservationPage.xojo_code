@@ -204,13 +204,16 @@ End
 	#tag Event
 		Sub PrimaryButtonPressed()
 		  session.addPageToPath(self)
-		  if mCustomer.ANetPaymentProfileID = "" or mCustomer.aNetProfileID = "" then
-		    session.StoreCreditCard.Show(mCustomer, mReservation)
-		    
-		  else
-		    session.InformedConsent.Show(mCustomer, mReservation)
-		    
-		  end if
+		  'if mCustomer.ANetPaymentProfileID = "" or mCustomer.aNetProfileID = "" then
+		  'session.StoreCreditCard.Show(mCustomer, mReservation)
+		  '
+		  'else
+		  '----- This is where we would inject the LDL window...
+		  session.ldl.show(mCustomer,mReservation)
+		  '-----
+		  'session.InformedConsent.Show(mCustomer, mReservation)
+		  
+		  'end if
 		End Sub
 	#tag EndEvent
 	#tag Event
